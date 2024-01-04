@@ -1,0 +1,83 @@
+.hero {
+  /* background-image: url(../../assets/hero.jpg); */
+  background-size: cover;
+  background-position: bottom left;
+  height: 100vh;
+  width: 100%;
+  justify-content: left;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.contant {
+  margin-left: 5px;
+  text-shadow: 1px 1px 20px black;
+}
+small {
+  font-size: medium;
+  font-style: italic;
+}
+p:nth-last-of-type(2) {
+  font-size: large;
+  font-weight: 400;
+}
+h2 {
+  font-size: 40px;
+}
+p:nth-last-of-type(1) {
+  font-style: italic;
+}
+.btn {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 1rem 2.4rem;
+  font-weight: 600;
+  background-color: var(--yellow-color);
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--yellow-hover);
+}
+.btn:active {
+  background-color: var(--yellow-active);
+}
+
+@media screen and (min-width: 768px) {
+  .contant {
+    padding-left: 20px;
+  }
+
+  small {
+    font-size: xx-large;
+    font-style: italic;
+  }
+  p:nth-last-of-type(2) {
+    font-size: xx-large;
+  }
+  h2 {
+    font-size: 80px;
+  }
+  p:nth-last-of-type(1) {
+    font-size: xx-large;
+  }
+  .btn {
+    font-size: x-large;
+  }
+
+  .btn:hover {
+    background-color: var(--yellow-hover);
+  }
+  .btn:active {
+    background-color: var(--yellow-active);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contant {
+    padding-left: 50px;
+  }
+  h2 {
+    font-size: 100px;
+  }
+}

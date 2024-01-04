@@ -1,0 +1,55 @@
+.footer {
+  background-color: var(--secondary-dark);
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  /* background-color: blue; */
+  gap: 50px;
+  margin: auto;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: x-large;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.line {
+  display: block;
+  height: 5px;
+  width: 80px;
+  margin: auto;
+  background-color: var(--green-color);
+}
+
+.copyRight {
+  color: white;
+  font-size: small;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    background-color: var(--secondary-dark);
+    padding: 3rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .menu {
+    gap: 10px;
+  }
+  .link {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,138 @@
+.nav {
+  position: fixed;
+  left: 0;
+  top: -1px;
+  right: 0;
+  z-index: 1;
+  background-color: var(--secondary-dark);
+}
+.navBg {
+  position: fixed;
+  left: 0;
+  top: -1px;
+  right: 0;
+  z-index: 1;
+  background-color: var(--secondary-dark);
+}
+.container {
+  max-width: 1220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.img {
+  height: 50px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+}
+.close {
+  position: absolute;
+  background-color: var(--secondary-dark);
+  width: 100%;
+  height: 100vh;
+  top: 50px;
+  left: -120%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 2rem 0;
+  transition: 0.5s ease-in;
+}
+.open {
+  position: absolute;
+  background-color: var(--secondary-dark);
+  width: 100%;
+  height: 100vh;
+  top: 50px;
+  left: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 2rem 0;
+  transition: 0.5s ease-in;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.link:hover {
+  border-bottom: 2px solid yellow;
+}
+
+.btn {
+  color: white;
+  font-size: 30px;
+}
+
+/* ? tab */
+@media screen and (min-width: 768px) {
+  .nav {
+    padding: 0 2px;
+    top: -2px;
+  }
+  .img {
+    height: 80px;
+    cursor: pointer;
+  }
+  .open,
+  .close {
+    gap: 70px;
+    top: 84px;
+  }
+  .link {
+    font-size: x-large;
+    padding-bottom: 1rem;
+  }
+  .btn {
+    color: white;
+    font-size: 50px;
+  }
+}
+
+/* dekstop */
+@media screen and (min-width: 1280px) {
+  .nav {
+    background-color: transparent;
+  }
+  .nav,
+  .navBg {
+    transition: 0.3s ease-in-out;
+  }
+
+  .img {
+    height: 80px;
+    cursor: pointer;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    margin-left: 380px;
+  }
+  .link {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+  }
+  .close,
+  .open {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+}

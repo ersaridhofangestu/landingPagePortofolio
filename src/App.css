@@ -1,0 +1,23 @@
+:root {
+  --secondary-dark: rgba(19, 19, 19);
+  --yellow-color: rgb(248, 248, 0);
+  --yellow-hover: rgb(209, 209, 0);
+  --yellow-active: rgb(198, 198, 4);
+  --green-color: rgb(3, 178, 3);
+  --green-hover: green;
+  --green-active: rgb(1, 109, 1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  height: 2000px;
+}
+
+.active {
+  border-bottom: 2px solid yellow;
+}
